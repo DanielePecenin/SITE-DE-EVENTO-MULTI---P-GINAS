@@ -1,0 +1,238 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #14615b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    background-image: url('banner-agronegocio.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+}
+
+header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 3em;
+    z-index: 2;
+    position: relative;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+    position: relative;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #27ae60;
+    border-radius: 5px;
+}
+
+/* Ícones no Menu */
+header nav ul li a:before {
+    content: '';
+    margin-right: 8px;
+    font-family: 'Font Awesome 5 Free'; /* Para usar FontAwesome */
+    font-weight: 900;
+}
+
+header nav ul li:nth-child(1) a:before { content: '\f015'; } /* Ícone de Home */
+header nav ul li:nth-child(2) a:before { content: '\f073'; } /* Ícone de Calendário */
+header nav ul li:nth-child(3) a:before { content: '\f0c0'; } /* Ícone de Palestrantes */
+header nav ul li:nth-child(4) a:before { content: '\f044'; } /* Ícone de Formulário */
+header nav ul li:nth-child(5) a:before { content: '\f1d8'; } /* Ícone de Contato */
+
+/* Estilo Principal */
+main {
+    padding: 40px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #16a085;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Tabela de Programação */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #16a085;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e2f1f8;
+}
+
+/* Formulários */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.1em;
+}
+
+form input[type="submit"], button {
+    width: auto;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover, button:hover {
+    background-color: #2ecc71;
+}
+
+/* Seção de Contato */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact-info div {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.contact-info div img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+    
+}

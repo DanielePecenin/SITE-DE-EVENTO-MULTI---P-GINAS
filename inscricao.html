@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>Inscreva-se no Evento</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="palestrantes.html">Palestrantes</a></li>
+                <li><a href="inscricao.html">Inscrição</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="submit_inscricao.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="ingresso">Opção de Ingresso:</label>
+            <select id="ingresso" name="ingresso">
+                <option value="vip">VIP</option>
+                <option value="standard">Standard</option>
+            </select>
+
+            <button type="submit">Enviar Inscrição</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Evento de Agronegócio</p>
+    </footer>
+</body>
+</html>
